@@ -1,0 +1,1284 @@
+﻿{
+  "ProgramsToInstallDirectory": "C:\\Config\\Apps",
+  "WinGetPackagesToInstall": [
+    "Microsoft.PowerShell"
+  ],
+  "AppxPackagesToRemove": [
+    "Clipchamp.Clipchamp",
+    "Microsoft.BingNews",
+    "Microsoft.BingWeather",
+    "Microsoft.Copilot",
+    "Microsoft.GetHelp",
+    "Microsoft.MicrosoftSolitaireCollection",
+    "Microsoft.MicrosoftStickyNotes",
+    "Microsoft.OutlookForWindows",
+    "Microsoft.PowerAutomateDesktop",
+    "Microsoft.StartExperiencesApp",
+    "Microsoft.Todos",
+    "Microsoft.WindowsAlarms",
+    "Microsoft.WindowsFeedbackHub",
+    "Microsoft.ZuneMusic",
+    "MicrosoftCorporationII.MicrosoftFamily",
+    "MicrosoftCorporationII.QuickAssist",
+    "MSTeams"
+  ],
+  "Resources": {
+    "3dEditor": "C:\\Program Files\\Blender Foundation\\Blender 4.5\\blender.exe",
+    "ArchiveExtractor": "C:\\Program Files\\7-Zip\\7zG.exe",
+    "ArchiveViewer": "C:\\Program Files\\7-Zip\\7zFM.exe",
+    "AudioEditor": "C:\\Program Files (x86)\\Audacity\\Audacity.exe",
+    "AudioPlayer": "C:\\Program Files\\MPV\\MPV.exe",
+    "ImageEditor": "C:\\Program Files\\paint.net\\paintdotnet.exe",
+    "ImageViewer": "C:\\Program Files\\IrfanView\\i_view64.exe",
+    "Java": "C:\\Program Files\\OpenJDK\\bin\\java.exe",
+    "PdfViewer": "C:\\Program Files\\SumatraPDF\\SumatraPDF.exe",
+    "Python": "C:\\Program Files\\Python311\\py.bat",
+    "ResourceEditor": "C:\\Program Files (x86)\\ResourceHacker\\ResourceHacker.exe",
+    "TextEditor": "C:\\Program Files\\Sublime Text\\sublime_text.exe",
+    "VideoPlayer": "C:\\Program Files\\MPV\\MPV.exe",
+    "ImageRes": "%SystemRoot%\\System32\\ImageRes.dll",
+    "Shell32": "%SystemRoot%\\System32\\Shell32.dll",
+    "DevMgr": "%SystemRoot%\\System32\\devmgr.dll",
+    "CustomIcons": "C:\\Program Files\\CustomIcons\\CustomIcons.dll"
+  },
+  "FileTypeActions": {
+    "Run": {
+      "Name": "open",
+      "Label": "Run",
+      "Command": "\"%1\" %*"
+    },
+    "RunAs": {
+      "Name": "Runas",
+      "Label": "Run (Admin)",
+      "Command": "\"%1\" %*",
+      "HasShieldIcon": true
+    },
+    "RunPowershell": {
+      "Name": "0",
+      "Label": "Run",
+      "Command": "\"%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass \"%1\""
+    },
+    "RunAsPowershell": {
+      "Name": "Runas",
+      "Label": "Run (Admin)",
+      "Command": "\"%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass \"%1\"",
+      "HasShieldIcon": true
+    },
+    "InstallINF": {
+      "Name": "install",
+      "Label": "Install",
+      "Command": "\"%SystemRoot%\\System32\\InfDefaultInstall.exe\" \"%1\""
+    },
+    "EditText": {
+      "Name": "z_edit",
+      "Label": "Edit",
+      "Command": "\"$(TextEditor)\" \"%1\""
+    },
+    "EditResource": {
+      "Name": "z_edit",
+      "Label": "Edit",
+      "Command": "\"$(ResourceEditor)\" \"%1\""
+    },
+    "OpenArchive": {
+      "Name": "open",
+      "Label": "Open",
+      "Command": "\"$(ArchiveViewer)\" \"%1\""
+    },
+    "ExtractArchive": {
+      "Name": "extract",
+      "Label": "Extract",
+      "Command": "\"$(ArchiveExtractor)\" x -o* \"%1\""
+    },
+    "ExtractArchiveHere": {
+      "Name": "extractHere",
+      "Label": "Extract Here",
+      "Command": "\"$(ArchiveExtractor)\" x \"%1\""
+    },
+    "PlayAudio": {
+      "Name": "play",
+      "Label": "Play",
+      "Command": "\"$(AudioPlayer)\" \"%1\""
+    },
+    "EditAudio": {
+      "Name": "edit",
+      "Label": "Edit",
+      "Command": "\"$(AudioEditor)\" \"%1\""
+    },
+    "OpenImage": {
+      "Name": "open",
+      "Label": "Open",
+      "Command": "\"$(ImageViewer)\" \"%1\""
+    },
+    "EditImage": {
+      "Name": "r_edit",
+      "Label": "Edit",
+      "Command": "\"$(ImageEditor)\" \"%1\""
+    },
+    "PlayVideo": {
+      "Name": "play",
+      "Label": "Play",
+      "Command": "\"$(VideoPlayer)\" \"%1\""
+    },
+    "RunJar": {
+      "Name": "OpenJar",
+      "Label": "Run",
+      "Command": "\"$(Java)\" -jar \"%1\""
+    },
+    "PreviewFont": {
+      "Name": "preview",
+      "Label": "Preview",
+      "Command": "\"%SystemRoot%\\System32\\fontview.exe\" \"%1\""
+    },
+    "EditMesh": {
+      "Name": "z_edit_mesh",
+      "Label": "Edit",
+      "Command": "\"$(3dEditor)\" --python \"C:\\Config\\Scripts\\blender_auto_open.py\" -- \"%1\""
+    },
+    "OpenPDF": {
+      "Name": "open",
+      "Label": "Open",
+      "Command": "\"$(PdfViewer)\" \"%1\""
+    },
+    "RunPython": {
+      "Name": "Run",
+      "Label": "Run",
+      "Command": "\"$(python)\" \"%1\""
+    },
+    "RepairMsi": {
+      "Name": "Repair",
+      "Label": "Re&pair",
+      "Command": "\"%SystemRoot%\\System32\\msiexec.exe\" /f \"%1\" %*"
+    },
+    "UninstallMsi": {
+      "Name": "Uninstall",
+      "Label": "&Uninstall",
+      "Command": "\"%SystemRoot%\\System32\\msiexec.exe\" /x \"%1\" %*"
+    }
+  },
+  "FileTypes": [
+    {
+      "Extension": ".bat",
+      "Type": "System",
+      "ProgId": "batfile",
+      "Actions": [
+        "Run",
+        "EditText"
+      ],
+      "ActionsExtended": [
+        "RunAs"
+      ],
+      "ActionsHidden": [
+        "RunAsUser"
+      ]
+    },
+    {
+      "Extension": ".cmd",
+      "Type": "System",
+      "ProgId": "cmdfile",
+      "Actions": [
+        "Run",
+        "EditText"
+      ],
+      "ActionsExtended": [
+        "RunAs"
+      ],
+      "ActionsHidden": [
+        "RunAsUser"
+      ]
+    },
+    {
+      "Extension": ".dll",
+      "Type": "System",
+      "ProgId": "dllfile",
+      "Actions": [
+        "EditResource"
+      ]
+    },
+    {
+      "Extension": ".exe",
+      "Type": "System",
+      "ProgId": "exefile",
+      "Actions": [
+        "Run",
+        "EditResource"
+      ],
+      "ActionsExtended": [
+        "RunAs"
+      ],
+      "ActionsHidden": [
+        "RunAsUser"
+      ]
+    },
+    {
+      "Extension": ".msi",
+      "Type": "System",
+      "ProgId": "MSI.Package",
+      "Icon": "$\"(CustomIcons)\",-101",
+      "Extended": [
+        "RepairMsi",
+        "UninstallMsi"
+      ]
+    },
+    {
+      "Extension": ".msp",
+      "Type": "System",
+      "ProgId": "MSI.Patch",
+      "Icon": "\"$(CustomIcons)\",-101"
+    },
+    {
+      "Extension": ".ps1",
+      "Type": "System",
+      "ProgId": "Microsoft.PowerShellScript.1",
+      "Icon": "\"$(CustomIcons)\",-103",
+      "Actions": [
+        "RunPowershell",
+        "EditText"
+      ],
+      "ActionsExtended": [
+        "RunAsPowershell"
+      ]
+    },
+    {
+      "Extension": ".psd1",
+      "Type": "System",
+      "ProgId": "Microsoft.PowerShellData.1",
+      "Icon": "\"$(CustomIcons)\",-104",
+      "Actions": [
+        "EditText"
+      ]
+    },
+    {
+      "Extension": ".psm1",
+      "Type": "System",
+      "ProgId": "Microsoft.PowerShellModule.1",
+      "Icon": "\"$(CustomIcons)\",-104",
+      "Actions": [
+        "EditText"
+      ]
+    },
+    {
+      "Extension": ".reg",
+      "Type": "System",
+      "ProgId": "regfile",
+      "Actions": [
+        "EditText"
+      ]
+    },
+    {
+      "Extension": ".ttf",
+      "Type": "System",
+      "ProgId": "ttffile",
+      "Actions": [
+        "preview"
+      ]
+    },
+    {
+      "Extension": ".otf",
+      "Type": "System",
+      "ProgId": "otffile",
+      "Actions": [
+        "preview"
+      ]
+    },
+    {
+      "Extension": ".chm",
+      "Type": "System",
+      "ProgId": "chm.file",
+      "Icon": "\"$(Shell32),-1004\"",
+      "takeOwnership": true
+    },
+    {
+      "Extension": ".jar",
+      "Type": "Application",
+      "ProgId": "jarfile",
+      "Icon": "\"$(CustomIcons)\",-110",
+      "Description": "Java Archive File",
+      "Actions": [
+        "RunJar",
+        "OpenArchive"
+      ]
+    },
+    {
+      "Extension": ".001",
+      "Type": "Archive",
+      "Icon": "$(ImageRes),-174",
+      "Description": "Split Archive",
+      "Actions": [
+        "OpenArchive",
+        "ExtractArchive"
+      ],
+      "ActionsExtended": [
+        "ExtractArchiveHere"
+      ]
+    },
+    {
+      "Extension": ".7z",
+      "Type": "Archive",
+      "Icon": "$(ImageRes),-174",
+      "Description": "7-Zip Archive",
+      "Actions": [
+        "OpenArchive",
+        "ExtractArchive"
+      ],
+      "ActionsExtended": [
+        "ExtractArchiveHere"
+      ]
+    },
+    {
+      "Extension": ".apk",
+      "Type": "Archive",
+      "Icon": "$(ImageRes),-174",
+      "Description": "Android Application Archive",
+      "Actions": [
+        "OpenArchive",
+        "ExtractArchive"
+      ],
+      "ActionsExtended": [
+        "ExtractArchiveHere"
+      ]
+    },
+    {
+      "Extension": ".bz2",
+      "Type": "Archive",
+      "Icon": "$(ImageRes),-174",
+      "Description": "BZip2 Archive",
+      "Actions": [
+        "OpenArchive",
+        "ExtractArchive"
+      ],
+      "ActionsExtended": [
+        "ExtractArchiveHere"
+      ]
+    },
+    {
+      "Extension": ".bzip2",
+      "Type": "Archive",
+      "Icon": "$(ImageRes),-174",
+      "Description": "BZip2 Archive",
+      "Actions": [
+        "OpenArchive",
+        "ExtractArchive"
+      ],
+      "ActionsExtended": [
+        "ExtractArchiveHere"
+      ]
+    },
+    {
+      "Extension": ".cab",
+      "Type": "Archive",
+      "Icon": "$(ImageRes),-174",
+      "Description": "Cabinet Archive",
+      "Actions": [
+        "OpenArchive",
+        "ExtractArchive"
+      ],
+      "ActionsExtended": [
+        "ExtractArchiveHere"
+      ]
+    },
+    {
+      "Extension": ".deb",
+      "Type": "Archive",
+      "Icon": "$(ImageRes),-174",
+      "Description": "Debian Software Pakage Archive",
+      "Actions": [
+        "OpenArchive",
+        "ExtractArchive"
+      ],
+      "ActionsExtended": [
+        "ExtractArchiveHere"
+      ]
+    },
+    {
+      "Extension": ".dmg",
+      "Type": "Archive",
+      "Icon": "$(ImageRes),-174",
+      "Description": "Apple Disk Image",
+      "Actions": [
+        "OpenArchive",
+        "ExtractArchive"
+      ],
+      "ActionsExtended": [
+        "ExtractArchiveHere"
+      ]
+    },
+    {
+      "Extension": ".gz",
+      "Type": "Archive",
+      "Icon": "$(ImageRes),-174",
+      "Description": "GZip Archive",
+      "Actions": [
+        "OpenArchive",
+        "ExtractArchive"
+      ],
+      "ActionsExtended": [
+        "ExtractArchiveHere"
+      ]
+    },
+    {
+      "Extension": ".gzip",
+      "Type": "Archive",
+      "Icon": "$(ImageRes),-174",
+      "Description": "GZip Archive",
+      "Actions": [
+        "OpenArchive",
+        "ExtractArchive"
+      ],
+      "ActionsExtended": [
+        "ExtractArchiveHere"
+      ]
+    },
+    {
+      "Extension": ".iso",
+      "Type": "Archive",
+      "Icon": "$(ImageRes),-174",
+      "Description": "Disc Image",
+      "Actions": [
+        "OpenArchive",
+        "ExtractArchive"
+      ],
+      "ActionsExtended": [
+        "ExtractArchiveHere"
+      ]
+    },
+    {
+      "Extension": ".lzma",
+      "Type": "Archive",
+      "Icon": "$(ImageRes),-174",
+      "Description": "LZMA Archive",
+      "Actions": [
+        "OpenArchive",
+        "ExtractArchive"
+      ],
+      "ActionsExtended": [
+        "ExtractArchiveHere"
+      ]
+    },
+    {
+      "Extension": ".rar",
+      "Type": "Archive",
+      "Icon": "$(ImageRes),-174",
+      "Description": "RAR Archive",
+      "Actions": [
+        "OpenArchive",
+        "ExtractArchive"
+      ],
+      "ActionsExtended": [
+        "ExtractArchiveHere"
+      ]
+    },
+    {
+      "Extension": ".rpm",
+      "Type": "Archive",
+      "Icon": "$(ImageRes),-174",
+      "Description": "RPM Package Manager Archive",
+      "Actions": [
+        "OpenArchive",
+        "ExtractArchive"
+      ],
+      "ActionsExtended": [
+        "ExtractArchiveHere"
+      ]
+    },
+    {
+      "Extension": ".tar",
+      "Type": "Archive",
+      "Icon": "$(ImageRes),-174",
+      "Description": "Tape Archive Archive",
+      "Actions": [
+        "OpenArchive",
+        "ExtractArchive"
+      ],
+      "ActionsExtended": [
+        "ExtractArchiveHere"
+      ]
+    },
+    {
+      "Extension": ".wim",
+      "Type": "Archive",
+      "Icon": "$(ImageRes),-174",
+      "Description": "Windows Image",
+      "Actions": [
+        "OpenArchive",
+        "ExtractArchive"
+      ],
+      "ActionsExtended": [
+        "ExtractArchiveHere"
+      ]
+    },
+    {
+      "Extension": ".xz",
+      "Type": "Archive",
+      "Icon": "$(ImageRes),-174",
+      "Description": "XZ Archive",
+      "Actions": [
+        "OpenArchive",
+        "ExtractArchive"
+      ],
+      "ActionsExtended": [
+        "ExtractArchiveHere"
+      ]
+    },
+    {
+      "Extension": ".zip",
+      "Type": "Archive",
+      "Icon": "$(ImageRes),-174",
+      "Description": "ZIP Archive",
+      "Actions": [
+        "OpenArchive",
+        "ExtractArchive"
+      ],
+      "ActionsExtended": [
+        "ExtractArchiveHere"
+      ]
+    },
+    {
+      "Extension": ".c",
+      "Type": "Text",
+      "Icon": "$(ImageRes),-102",
+      "Description": "C Source File",
+      "Actions": [
+        "editText"
+      ]
+    },
+    {
+      "Extension": ".cfg",
+      "Type": "Text",
+      "Icon": "$(DevMgr),-44",
+      "Description": "Configuration File",
+      "Actions": [
+        "EditText"
+      ]
+    },
+    {
+      "Extension": ".conf",
+      "Type": "Text",
+      "Icon": "$(DevMgr),-44",
+      "Description": "Configuration File",
+      "Actions": [
+        "EditText"
+      ]
+    },
+    {
+      "Extension": ".config",
+      "Type": "Text",
+      "Icon": "$(DevMgr),-44",
+      "Description": "Configuration File",
+      "Actions": [
+        "EditText"
+      ]
+    },
+    {
+      "Extension": ".cpp",
+      "Type": "Text",
+      "Icon": "$(ImageRes),-102",
+      "Description": "C++ Source File",
+      "Actions": [
+        "EditText"
+      ]
+    },
+    {
+      "Extension": ".cs",
+      "Type": "Text",
+      "Icon": "$(ImageRes),-102",
+      "Description": "\"C#\" Source File",
+      "Actions": [
+        "EditText"
+      ]
+    },
+    {
+      "Extension": ".csv",
+      "Type": "Text",
+      "Icon": "$(ImageRes),-102",
+      "Description": "Comma Separated Values File",
+      "Actions": [
+        "EditText"
+      ]
+    },
+    {
+      "Extension": ".csproj",
+      "Type": "Text",
+      "Icon": "$(ImageRes),-5322",
+      "Description": "\"C#\" Project File",
+      "Actions": [
+        "EditText"
+      ]
+    },
+    {
+      "Extension": ".css",
+      "Type": "Text",
+      "Icon": "$(DevMgr),-44",
+      "Description": "Cascading Style Sheet File",
+      "Actions": [
+        "EditText"
+      ]
+    },
+    {
+      "Extension": ".scss",
+      "Type": "Text",
+      "Icon": "$(DevMgr),-44",
+      "Description": "SCSS File",
+      "Actions": [
+        "EditText"
+      ]
+    },
+    {
+      "Extension": ".sass",
+      "Type": "Text",
+      "Icon": "$(DevMgr),-44",
+      "Description": "SASS File",
+      "Actions": [
+        "EditText"
+      ]
+    },
+    {
+      "Extension": ".h",
+      "Type": "Text",
+      "Icon": "$(ImageRes),-102",
+      "Description": "C Header File",
+      "Actions": [
+        "EditText"
+      ]
+    },
+    {
+      "Extension": ".hpp",
+      "Type": "Text",
+      "Icon": "$(ImageRes),-102",
+      "Description": "C++ Header File",
+      "Actions": [
+        "EditText"
+      ]
+    },
+    {
+      "Extension": ".inf",
+      "Type": "Text",
+      "Icon": "$(DevMgr),-44",
+      "Description": "Setup Information File",
+      "Actions": [
+        "EditText"
+      ],
+      "ActionsExtended": [
+        "InstallINF"
+      ]
+    },
+    {
+      "Extension": ".ini",
+      "Type": "Text",
+      "Icon": "$(DevMgr),-44",
+      "Description": "Configuration File",
+      "Actions": [
+        "EditText"
+      ]
+    },
+    {
+      "Extension": ".java",
+      "Type": "Text",
+      "Icon": "$(ImageRes),-102",
+      "Description": "Java Source File",
+      "Actions": [
+        "EditText"
+      ]
+    },
+    {
+      "Extension": ".js",
+      "Type": "Text",
+      "Icon": "$(DevMgr),-44",
+      "Description": "JavaScript File",
+      "Actions": [
+        "EditText"
+      ]
+    },
+    {
+      "Extension": ".jsx",
+      "Type": "Text",
+      "Icon": "$(DevMgr),-44",
+      "Description": "JavaScript File",
+      "Actions": [
+        "EditText"
+      ]
+    },
+    {
+      "Extension": ".jse",
+      "Type": "Text",
+      "Icon": "$(DevMgr),-44",
+      "Description": "Encoded JavaScript File",
+      "Actions": [
+        "EditText"
+      ]
+    },
+    {
+      "Extension": ".json",
+      "Type": "Text",
+      "Icon": "$(DevMgr),-44",
+      "Description": "JavaScript Object Notation File",
+      "Actions": [
+        "EditText"
+      ]
+    },
+    {
+      "Extension": ".log",
+      "Type": "Text",
+      "Icon": "$(ImageRes),-102",
+      "Description": "Log File",
+      "Actions": [
+        "EditText"
+      ]
+    },
+    {
+      "Extension": ".lua",
+      "Type": "Text",
+      "Icon": "$(DevMgr),-44",
+      "Description": "LUA Document",
+      "Actions": [
+        "EditText"
+      ]
+    },
+    {
+      "Extension": ".md",
+      "Type": "Text",
+      "Icon": "$(ImageRes),-102",
+      "Description": "Markdown Document",
+      "Actions": [
+        "EditText"
+      ]
+    },
+    {
+      "Extension": ".meta",
+      "Type": "Text",
+      "Icon": "$(ImageRes),-102",
+      "Description": "Metadata file",
+      "Actions": [
+        "EditText"
+      ]
+    },
+    {
+      "Extension": ".nsis",
+      "Type": "Text",
+      "Icon": "$(DevMgr),-44",
+      "Description": "NSIS Script",
+      "Actions": [
+        "EditText"
+      ]
+    },
+    {
+      "Extension": ".php",
+      "Type": "Text",
+      "Icon": "$(DevMgr),-44",
+      "Description": "PHP Script File",
+      "Actions": [
+        "EditText"
+      ]
+    },
+    {
+      "Extension": ".py",
+      "Type": "Text",
+      "Icon": "$(ImageRes),-102",
+      "Description": "Python Script File",
+      "Actions": [
+        "EditText",
+        "RunPython"
+      ]
+    },
+    {
+      "Extension": ".resx",
+      "Type": "Text",
+      "Icon": "$(DevMgr),-44",
+      "Description": "Resources File",
+      "Actions": [
+        "EditText"
+      ]
+    },
+    {
+      "Extension": ".rtf",
+      "Type": "Text",
+      "ProgId": "rtffile",
+      "Icon": "$(ImageRes),-90",
+      "Actions": [
+        "EditText"
+      ]
+    },
+    {
+      "Extension": ".settings",
+      "Type": "Text",
+      "Icon": "$(DevMgr),-44",
+      "Description": "Settings File",
+      "Actions": [
+        "EditText"
+      ]
+    },
+    {
+      "Extension": ".shader",
+      "Type": "Text",
+      "Icon": "$(ImageRes),-102",
+      "Description": "Unity Shader",
+      "Actions": [
+        "EditText"
+      ]
+    },
+    {
+      "Extension": ".toml",
+      "Type": "Text",
+      "Icon": "$(DevMgr),-44",
+      "Description": "TOML Config File",
+      "Actions": [
+        "EditText"
+      ]
+    },
+    {
+      "Extension": ".tsv",
+      "Type": "Text",
+      "Icon": "$(ImageRes),-102",
+      "Description": "Tab Separated Values File",
+      "Actions": [
+        "EditText"
+      ]
+    },
+    {
+      "Extension": ".txt",
+      "Type": "Text",
+      "Icon": "$(ImageRes),-19",
+      "Description": "Text Document",
+      "Actions": [
+        "EditText"
+      ]
+    },
+    {
+      "Extension": ".vbs",
+      "Type": "Text",
+      "Icon": "$(DevMgr),-44",
+      "Description": "VBS Script",
+      "Actions": [
+        "EditText"
+      ]
+    },
+    {
+      "Extension": ".xml",
+      "Type": "Text",
+      "Icon": "$(DevMgr),-44",
+      "Description": "XML Document",
+      "Actions": [
+        "EditText"
+      ]
+    },
+    {
+      "Extension": ".ps1xml",
+      "Type": "Text",
+      "Icon": "$(DevMgr),-44",
+      "Description": "Powershell XML Document",
+      "Actions": [
+        "EditText"
+      ]
+    },
+    {
+      "Extension": ".yaml",
+      "Type": "Text",
+      "Icon": "$(DevMgr),-44",
+      "Description": "YAML Config File",
+      "Actions": [
+        "EditText"
+      ]
+    },
+    {
+      "Extension": ".xsl",
+      "Type": "Text",
+      "Icon": "$(DevMgr),-44",
+      "Description": "XSL Stylesheet",
+      "Actions": [
+        "EditText"
+      ]
+    },
+    {
+      "Extension": ".htm",
+      "Type": "Document",
+      "ProgId": "MSEdgeHTM",
+      "Actions": [
+        "EditText"
+      ]
+    },
+    {
+      "Extension": ".html",
+      "Type": "Document",
+      "ProgId": "AppX4hxtad77fbk3jkkeerkrm0ze94wjf3s9",
+      "Actions": [
+        "EditText"
+      ]
+    },
+    {
+      "Extension": ".pdf",
+      "Type": "Document",
+      "ProgId": "MSEdgePDF",
+      "Icon": "\"$(CustomIcons)\",-106",
+      "Actions": [
+        "OpenPDF"
+      ]
+    },
+    {
+      "Extension": ".download",
+      "Type": "Document",
+      "ProgId": "Document.Download",
+      "Icon": "\"$(CustomIcons)\",-105",
+      "Description": "Downloading File"
+    },
+    {
+      "Extension": ".crdownload",
+      "Type": "Document",
+      "ProgId": "Document.Download",
+      "Icon": "\"$(CustomIcons)\",-105",
+      "Description": "Downloading File"
+    },
+    {
+      "Extension": ".part",
+      "Type": "Document",
+      "ProgId": "Document.Download",
+      "Icon": "\"$(CustomIcons)\",-105",
+      "Description": "Downloading File"
+    },
+    {
+      "Extension": ".bmp",
+      "Type": "Image",
+      "Icon": "$\"(CustomIcons)\",-109",
+      "Description": "Bitmap Image",
+      "Actions": [
+        "OpenImage",
+        "EditImage"
+      ]
+    },
+    {
+      "Extension": ".gif",
+      "Type": "Image",
+      "Icon": "$\"(CustomIcons)\",-109",
+      "Description": "GIF Image",
+      "Actions": [
+        "OpenImage",
+        "EditImage"
+      ]
+    },
+    {
+      "Extension": ".jpg",
+      "Type": "Image",
+      "Icon": "$\"(CustomIcons)\",-108",
+      "Description": "JPG Image",
+      "Actions": [
+        "OpenImage",
+        "EditImage"
+      ]
+    },
+    {
+      "Extension": ".jpeg",
+      "Type": "Image",
+      "Icon": "$\"(CustomIcons)\",-108",
+      "Description": "JPEG Image",
+      "Actions": [
+        "OpenImage",
+        "EditImage"
+      ]
+    },
+    {
+      "Extension": ".png",
+      "Type": "Image",
+      "Icon": "$\"(CustomIcons)\",-107",
+      "Description": "PNG Image",
+      "Actions": [
+        "OpenImage",
+        "EditImage"
+      ]
+    },
+    {
+      "Extension": ".webp",
+      "Type": "Image",
+      "Icon": "$\"(CustomIcons)\",-107",
+      "Description": "WebP Image",
+      "Actions": [
+        "OpenImage",
+        "EditImage"
+      ]
+    },
+    {
+      "Extension": ".tif",
+      "Type": "Image",
+      "Icon": "$\"(CustomIcons)\",-108",
+      "Description": "TIF Image",
+      "Actions": [
+        "OpenImage",
+        "EditImage"
+      ]
+    },
+    {
+      "Extension": ".tiff",
+      "Type": "Image",
+      "Icon": "$\"(CustomIcons)\",-108",
+      "Description": "TIFF Image",
+      "Actions": [
+        "OpenImage",
+        "EditImage"
+      ]
+    },
+    {
+      "Extension": ".dds",
+      "Type": "Image",
+      "Icon": "$\"(CustomIcons)\",-109",
+      "Description": "DDS Texture",
+      "Actions": [
+        "OpenImage",
+        "EditImage"
+      ]
+    },
+    {
+      "Extension": ".tga",
+      "Type": "Image",
+      "Icon": "$\"(CustomIcons)\",-109",
+      "Description": "TGA Texture",
+      "Actions": [
+        "OpenImage",
+        "EditImage"
+      ]
+    },
+    {
+      "Extension": ".ico",
+      "Type": "Image",
+      "Icon": "\"%1\"",
+      "Description": "Icon File",
+      "Actions": [
+        "OpenImage",
+        "EditImage"
+      ]
+    },
+    {
+      "Extension": ".aiff",
+      "Type": "Audio",
+      "Icon": "$(ImageRes),-22",
+      "Description": "Audio Interchange File"
+    },
+    {
+      "Extension": ".flac",
+      "Type": "Audio",
+      "Icon": "$(ImageRes),-22",
+      "Description": "Free Lossless Audio File",
+      "Actions": [
+        "PlayAudio",
+        "EditAudio"
+      ]
+    },
+    {
+      "Extension": ".m4a",
+      "Type": "Audio",
+      "Icon": "$(ImageRes),-22",
+      "Description": "Apple AAC Audio File",
+      "Actions": [
+        "PlayAudio",
+        "EditAudio"
+      ]
+    },
+    {
+      "Extension": ".mp3",
+      "Type": "Audio",
+      "Icon": "$(ImageRes),-22",
+      "Description": "MP3 Audio File",
+      "Actions": [
+        "PlayAudio",
+        "EditAudio"
+      ]
+    },
+    {
+      "Extension": ".ogg",
+      "Type": "Audio",
+      "Icon": "$(ImageRes),-22",
+      "Description": "OGG Vorbis Audio File",
+      "Actions": [
+        "PlayAudio",
+        "EditAudio"
+      ]
+    },
+    {
+      "Extension": ".opus",
+      "Type": "Audio",
+      "Icon": "$(ImageRes),-22",
+      "Description": "OPUS Audio File",
+      "Actions": [
+        "PlayAudio",
+        "EditAudio"
+      ]
+    },
+    {
+      "Extension": ".wav",
+      "Type": "Audio",
+      "Icon": "$(ImageRes),-22",
+      "Description": "Waveform Audio File",
+      "Actions": [
+        "PlayAudio",
+        "EditAudio"
+      ]
+    },
+    {
+      "Extension": ".wma",
+      "Type": "Audio",
+      "Icon": "$(ImageRes),-22",
+      "Description": "Windows Media Audio File",
+      "Actions": [
+        "PlayAudio",
+        "EditAudio"
+      ]
+    },
+    {
+      "Extension": ".asf",
+      "Type": "Video",
+      "Icon": "$(ImageRes),-23",
+      "Description": "Windows Media Video File",
+      "Actions": [
+        "PlayVideo"
+      ]
+    },
+    {
+      "Extension": ".h264",
+      "Type": "Video",
+      "Icon": "$(ImageRes),-23",
+      "Description": "Raw H264 Video File",
+      "Actions": [
+        "PlayVideo"
+      ]
+    },
+    {
+      "Extension": ".avi",
+      "Type": "Video",
+      "Icon": "$(ImageRes),-23",
+      "Description": "AVI Video File",
+      "Actions": [
+        "PlayVideo"
+      ]
+    },
+    {
+      "Extension": ".divx",
+      "Type": "Video",
+      "Icon": "$(ImageRes),-23",
+      "Description": "DIVX Video File",
+      "Actions": [
+        "PlayVideo"
+      ]
+    },
+    {
+      "Extension": ".flv",
+      "Type": "Video",
+      "Icon": "$(ImageRes),-23",
+      "Description": "Flash Video File",
+      "Actions": [
+        "PlayVideo"
+      ]
+    },
+    {
+      "Extension": ".mkv",
+      "Type": "Video",
+      "Icon": "$(ImageRes),-23",
+      "Description": "Matroska Video File",
+      "Actions": [
+        "PlayVideo"
+      ]
+    },
+    {
+      "Extension": ".webm",
+      "Type": "Video",
+      "Icon": "$(ImageRes),-23",
+      "Description": "WebM Video File",
+      "Actions": [
+        "PlayVideo"
+      ]
+    },
+    {
+      "Extension": ".mov",
+      "Type": "Video",
+      "Icon": "$(ImageRes),-23",
+      "Description": "Apple QuickTime Video File",
+      "Actions": [
+        "PlayVideo"
+      ]
+    },
+    {
+      "Extension": ".mp4",
+      "Type": "Video",
+      "Icon": "$(ImageRes),-23",
+      "Description": "MPEG-4 Video File",
+      "Actions": [
+        "PlayVideo"
+      ]
+    },
+    {
+      "Extension": ".m4v",
+      "Type": "Video",
+      "Icon": "$(ImageRes),-23",
+      "Description": "Apple MPEG-4 Video File",
+      "Actions": [
+        "PlayVideo"
+      ]
+    },
+    {
+      "Extension": ".mpeg",
+      "Type": "Video",
+      "Icon": "$(ImageRes),-23",
+      "Description": "MPEG Video File",
+      "Actions": [
+        "PlayVideo"
+      ]
+    },
+    {
+      "Extension": ".mpg",
+      "Type": "Video",
+      "Icon": "$(ImageRes),-23",
+      "Description": "MPEG Video File",
+      "Actions": [
+        "PlayVideo"
+      ]
+    },
+    {
+      "Extension": ".wmv",
+      "Type": "Video",
+      "Icon": "$(ImageRes),-23",
+      "Description": "Windows Media Video File",
+      "Actions": [
+        "PlayVideo"
+      ]
+    },
+    {
+      "Extension": ".dae",
+      "Type": "Mesh",
+      "Icon": "$(ImageRes),-198",
+      "Description": "DAE Mesh File",
+      "Actions": [
+        "EditMesh"
+      ]
+    },
+    {
+      "Extension": ".fbx",
+      "Type": "Mesh",
+      "Icon": "$(ImageRes),-198",
+      "Description": "FBX Mesh File",
+      "Actions": [
+        "EditMesh"
+      ]
+    },
+    {
+      "Extension": ".obj",
+      "Type": "Mesh",
+      "Icon": "$(ImageRes),-198",
+      "Description": "OBJ Mesh File",
+      "Actions": [
+        "EditMesh"
+      ]
+    }
+  ],
+  "ShellNewEntriesToDelete": [
+    ".zip\\CompressedFolder",
+    ".contact",
+    ".rtf",
+    ".bmp",
+    "Word.Document.12",
+    "Excel.Sheet.12",
+    "Excel.Sheet.12",
+    "PowerPoint.Show.12",
+    "Publisher.Document.12",
+    "PowerPoint.Show.12",
+    "Access.Application.12",
+    ".pub\\Publisher.Document.16",
+    ".accdb\\Access.Application.16",
+    ".mdb",
+    ".lnk"
+  ]
+}
