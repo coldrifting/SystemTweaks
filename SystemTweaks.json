@@ -213,10 +213,13 @@
       "Extension": ".msi",
       "Type": "System",
       "ProgId": "MSI.Package",
-      "Icon": "$\"(CustomIcons)\",-101",
-      "Extended": [
+      "Icon": "\"$(CustomIcons)\",-101",
+      "ActionsExtended": [
         "RepairMsi",
         "UninstallMsi"
+      ],
+      "ActionsHidden": [
+        "RunAsUser"
       ]
     },
     {
@@ -285,7 +288,7 @@
       "Type": "System",
       "ProgId": "chm.file",
       "Icon": "\"$(Shell32),-1004\"",
-      "takeOwnership": true
+      "TakeOwnership": true
     },
     {
       "Extension": ".jar",
@@ -936,7 +939,7 @@
     {
       "Extension": ".bmp",
       "Type": "Image",
-      "Icon": "$\"(CustomIcons)\",-109",
+      "Icon": "\"$(CustomIcons)\",-109",
       "Description": "Bitmap Image",
       "Actions": [
         "OpenImage",
@@ -946,7 +949,7 @@
     {
       "Extension": ".gif",
       "Type": "Image",
-      "Icon": "$\"(CustomIcons)\",-109",
+      "Icon": "\"$(CustomIcons)\",-109",
       "Description": "GIF Image",
       "Actions": [
         "OpenImage",
@@ -956,7 +959,7 @@
     {
       "Extension": ".jpg",
       "Type": "Image",
-      "Icon": "$\"(CustomIcons)\",-108",
+      "Icon": "\"$(CustomIcons)\",-108",
       "Description": "JPG Image",
       "Actions": [
         "OpenImage",
@@ -966,7 +969,7 @@
     {
       "Extension": ".jpeg",
       "Type": "Image",
-      "Icon": "$\"(CustomIcons)\",-108",
+      "Icon": "\"$(CustomIcons)\",-108",
       "Description": "JPEG Image",
       "Actions": [
         "OpenImage",
@@ -976,7 +979,7 @@
     {
       "Extension": ".png",
       "Type": "Image",
-      "Icon": "$\"(CustomIcons)\",-107",
+      "Icon": "\"$(CustomIcons)\",-107",
       "Description": "PNG Image",
       "Actions": [
         "OpenImage",
@@ -986,7 +989,7 @@
     {
       "Extension": ".webp",
       "Type": "Image",
-      "Icon": "$\"(CustomIcons)\",-107",
+      "Icon": "\"$(CustomIcons)\",-107",
       "Description": "WebP Image",
       "Actions": [
         "OpenImage",
@@ -996,7 +999,7 @@
     {
       "Extension": ".tif",
       "Type": "Image",
-      "Icon": "$\"(CustomIcons)\",-108",
+      "Icon": "\"$(CustomIcons)\",-108",
       "Description": "TIF Image",
       "Actions": [
         "OpenImage",
@@ -1006,7 +1009,7 @@
     {
       "Extension": ".tiff",
       "Type": "Image",
-      "Icon": "$\"(CustomIcons)\",-108",
+      "Icon": "\"$(CustomIcons)\",-108",
       "Description": "TIFF Image",
       "Actions": [
         "OpenImage",
@@ -1016,7 +1019,7 @@
     {
       "Extension": ".dds",
       "Type": "Image",
-      "Icon": "$\"(CustomIcons)\",-109",
+      "Icon": "\"$(CustomIcons)\",-109",
       "Description": "DDS Texture",
       "Actions": [
         "OpenImage",
@@ -1026,7 +1029,7 @@
     {
       "Extension": ".tga",
       "Type": "Image",
-      "Icon": "$\"(CustomIcons)\",-109",
+      "Icon": "\"$(CustomIcons)\",-109",
       "Description": "TGA Texture",
       "Actions": [
         "OpenImage",
